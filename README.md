@@ -1,4 +1,4 @@
-# CoronaTracker
+# **Corona** Tracker:nauseated_face:
 
 **Tools used:**
 * HTML
