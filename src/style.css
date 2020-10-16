@@ -1,0 +1,141 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.container h1 {
+  margin-top: 10rem;
+  font-size: 4rem;
+}
+
+.container h1 span {
+  color: red;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.stats-container {
+  margin-top: 2rem;
+  border: 1px solid #9dbcd4;
+  border-radius: 10px;
+  padding: 2rem;
+  width: 55%;
+  box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: space-around;
+}
+
+.country-container select {
+  width: 90%;
+  padding: 5px;
+  font-size: 1rem;
+  letter-spacing: 1px;
+  font-weight: bold;
+}
+
+.cases-container-number {
+  padding: 0 2rem;
+}
+
+.numbers-container {
+  border-radius: 5px;
+  margin-left: 1.2rem;
+}
+
+.confirmed-container {
+  background-color: #fff5f5;
+  border: 2px solid #fed7d7;
+}
+
+.recovered-container {
+  background-color: #f0fff4;
+  border: 2px solid #c6f6d5;
+}
+
+.death-container {
+  background-color: #edf2f7;
+  border: 2px solid #e2e8f0;
+}
+
+.confirmed-container .cases-container .cases-container-number {
+  color: #e53e3e;
+}
+
+.recovered-container .cases-container .cases-container-number {
+  color: #38a169;
+}
+
+.death-container .cases-container .cases-container-number {
+  color: #718096;
+}
+
+.confirmed-container .cases-container .cases-container-description {
+  background-color: #fed7d7;
+  color: #ff0000;
+}
+
+.recovered-container .cases-container .cases-container-description {
+  background-color: #c6f6d5;
+  color: #003611;
+}
+
+.death-container .cases-container .cases-container-description {
+  background-color: #e2e8f0;
+  color: #3f4041;
+}
+
+p {
+  text-align: center;
+  margin: 0;
+  width: 100%;
+  padding: 6px 5px;
+  font-size: 1rem;
+  letter-spacing: 1px;
+  font-weight: 500;
+}
+
+@media only screen and (max-width: 1787px) {
+  h2 {
+    font-size: 1rem;
+  }
+}
+
+@media only screen and (max-width: 1577px) {
+  .container h1 {
+    font-size: 3rem;
+  }
+
+  .stats-container {
+    flex-direction: column;
+  }
+
+  select[name="countries"] {
+    width: 100%;
+  }
+
+  .numbers-container {
+    text-align: center;
+    margin-top: 2rem;
+    margin-left: 0;
+  }
+}
+
+@media only screen and (max-width: 997px) {
+  .container h1 {
+    margin-top: 1rem;
+    font-size: 2rem;
+  }
+}

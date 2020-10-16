@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Corona Tracker</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1><span>Corona</span> Tracker 🤢</h1>
+      <div class="stats-container">
+        <div class="country-container">
+          <h2>Stats Overview</h2>
+          <select name="countries">
+            <option value="global">Global</option>
+          </select>
+        </div>
+        <div class="numbers-container confirmed-container">
+          <div class="cases-container">
+            <h2 class="cases-container-number"></h2>
+            <p class="cases-container-description">Confirmed</p>
+          </div>
+        </div>
+        <div class="numbers-container recovered-container">
+          <div class="cases-container">
+            <h2 class="cases-container-number"></h2>
+            <p class="cases-container-description">Recovered</p>
+          </div>
+        </div>
+        <div class="numbers-container death-container">
+          <div class="cases-container">
+            <h2 class="cases-container-number"></h2>
+            <p class="cases-container-description">Deaths</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="./init.js"></script>
+  </body>
+</html>
